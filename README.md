@@ -1,16 +1,16 @@
 # _C# AddressBook_
 
-#### _HTML, CSS, Bootstrap, Javascript/jQuery project for Epicodus, 01.22.2016_
+#### _HTML, C#, Nancy and Razor project for Epicodus, 01.22.2016_
 
 #### By _**Taylor Grohs**_
 
 ## Description
 
-_You can place an order for a two topping pizza and it will store your order. Make as many orders as you would like!._
+_This is an address book using C# nancy and razor to let the user add and delete contacts_
 
 ## Setup/Installation Requirements
 
-* To view the site go to [taylorgrohs.github.io/Csharp-addressbook](http://taylorgrohs.github.io/Csharp-addressbook)
+* To view the project you must clone the files and in your powershell run 'dnu restore' while in the project folder, after the restore is complete you then run 'dnx kestrel' and type localhost:5004 into your browser.
 
 
 ## Support and contact details
