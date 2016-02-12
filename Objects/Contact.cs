@@ -14,8 +14,11 @@ namespace Contacts.Objects
       _name = name;
       _phonenumber = phonenumber;
       _address = address;
-      _contactList.Add(this);
       _id = _contactList.Count;
+    }
+    public void AddContact()
+    {
+      _contactList.Add(this);
     }
     public string GetName()
     {
