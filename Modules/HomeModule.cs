@@ -27,7 +27,7 @@ namespace AddressBook
         List<Contact> allContacts = Contact.GetAll();
         return View["contacts.cshtml", allContacts];
       };
-      Get["contacts/{id}"] = parameters => {
+      Get["/contacts/{id}"] = parameters => {
         Contact contact = Contact.Find(parameters.id);
         return View["contact.cshtml", contact];
       };
