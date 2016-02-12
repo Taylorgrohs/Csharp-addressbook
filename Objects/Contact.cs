@@ -1,24 +1,25 @@
-using System.Collection.Generic;
+using System.Collections.Generic;
 
 namespace Contacts.Objects
 {
-  public class Contacts{
+  public class Contact
+  {
     private string _name;
-    private int _phonenumber;
+    private string _phonenumber;
     private string _address;
     private int _id;
     private static List<Contact> _contactList = new List<Contact> {};
 
-    public Contact(string name, int phonenumber, string address)
+    public Contact(string name, string phonenumber, string address)
     {
       _name = name;
       _phonenumber = phonenumber;
       _address = address;
-      _id = _contactList.Count;
     }
     public void AddContact()
     {
       _contactList.Add(this);
+      _id = _contactList.Count;
     }
     public string GetName()
     {
@@ -28,11 +29,11 @@ namespace Contacts.Objects
     {
       _name = newName;
     }
-    public int GetNumber()
+    public string GetNumber()
     {
       return _phonenumber;
     }
-    public int SetNumber(int newNumber)
+    public void  SetNumber(string newNumber)
     {
       _phonenumber = newNumber;
     }
@@ -40,7 +41,7 @@ namespace Contacts.Objects
     {
       return _address;
     }
-    public string SetAddress(string newAddress)
+    public void  SetAddress(string newAddress)
     {
       _address = newAddress;
     }
